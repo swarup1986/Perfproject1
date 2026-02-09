@@ -14,6 +14,7 @@ pipeline {
                 echo ==================================
                 echo Running Taurus login test
                 echo ==================================
+                cd perf_ci_cd_integration
                 bzt taurus\\login_test.yml
                 '''
             }
@@ -22,7 +23,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'jmeter\\results\\**', fingerprint: true
+            archiveArtifacts artifacts: 'perf_ci_cd_integration\\jmeter\\results\\**', fingerprint: true
         }
     }
 }
