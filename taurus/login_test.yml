@@ -1,0 +1,13 @@
+execution:
+  - executor: jmeter
+    concurrency: 1
+    ramp-up: 5s
+    hold-for: 30s
+    scenario: demo1
+
+scenarios:
+  demo1:
+    script: ../jmeter/scripts/demo1.jmx
+
+settings:
+  artifacts-dir: ../jmeter/results
