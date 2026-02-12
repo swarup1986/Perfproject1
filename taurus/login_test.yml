@@ -8,5 +8,3 @@ execution:
 scenarios:
   demo1:
     script: ../jmeter/scripts/demo1.jmx
-
-settings:
