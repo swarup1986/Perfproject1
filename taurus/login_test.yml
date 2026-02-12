@@ -10,4 +10,3 @@ scenarios:
     script: ../jmeter/scripts/demo1.jmx
 
 settings:
-  artifacts-dir: ../jmeter/results

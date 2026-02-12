@@ -22,7 +22,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'jmeter\\results\\**', fingerprint: true
+            archiveArtifacts artifacts: 'artifacts/**', fingerprint: true, allowEmptyArchive: true
         }
     }
 }
